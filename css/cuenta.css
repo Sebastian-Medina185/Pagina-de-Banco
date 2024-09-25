@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color:  rgb(43, 42, 44);
+}
+
+.header {
+    max-width: 100%;
+    background-color: rgb(22, 20, 20);
+    display: block;
+}
+
+/* EL MENU HAMBURGUESA    ************************************************* */
+.menu-container {
+    position: sticky;
+    top: 100px;
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 23px;
+}
+
+.open-menu {
+    display: none; /* block para activar, y none para que desaparezca */
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative; 
+    transition: transform .4s ease;
+}
+
+.open-menu:hover {
+    transform: scale(1.2);
+}
+
+.open-menu svg {
+    width: 68px; 
+    height: 68px; 
+    fill: #00b1a2; 
+}
+
+.menur {
+    display: none; 
+    position: absolute; 
+    top: 100%;
+    left: 0; 
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.menur:target {
+    display: block; 
+}
+
+.menur ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menur a {
+    font-size: 21px;
+    color: white;
+    text-decoration: none;
+}
+
+.titler {
+    font-size: 28px;
+    text-align: center;
+    height: 0px;
+}
+
+.menu a:hover {
+    color: black;
+}
+
+.content {
+    margin-top: 10px; 
+    padding: 10px;
+}
+
+.close-menu {
+    margin-left: 25px;
+}
+
+/* EL MENU HAMBURGUESA ************************************************************* */
+
+nav {
+    display: flex;
+    height: 125px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: 500px;
+    max-width: 100%;
+    font-size: 20px;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 55px;
+    cursor: pointer;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    color: #5ccbcf;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li:hover {
+    display: block;
+}
+
+.img-logo {
+    margin-top: 8px;
+    margin-left: 35px;
+    margin-bottom: 8px;
+    border-radius: 2cm;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    height: 880px;
+    background-color: rgb(43, 42, 44);
+}
+
+.container img {
+    width: 400px;
+    height: 300px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+.contenido {
+    margin-left: 100px;
+    width: 400px;
+    height: 750px;
+    margin-top: 70px;
+    border-radius: 6px;
+    background:  rgb(110, 103, 103);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    margin-left: 35px;
+}
+
+.contenido h2 {
+    padding-left: 40px;
+    padding-top: 0px;
+    font-size: 35px;
+}
+
+.contenido p {
+    line-height: 1.7rem;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 7px;
+}
+
+.contenido ul li {
+    padding-left: 40px;
+    padding-top: 20px;
+    list-style: none;
+}
+
+.boton {
+    background-color: rgb(110, 103, 103);
+    font-size: 27px;
+    margin-top: 30px;
+    padding: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 5px;
+    margin-left: 115px;
+    border: 1px solid rgb(78, 204, 204);
+}
+
+.boton a {
+    text-decoration: none;
+    color: rgb(78, 204, 204);
+}
+
+
+.btn {
+    padding: 15px 30px;
+    padding-bottom: 20px;
+    color: rgb(78, 204, 204);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    color: white;
+    background: rgb(78, 204, 204);
+    font-weight: 500;
+}
+
+.cuenta-img {
+    display: flex;
+    height: 425px;
+    background-color: rgb(43, 42, 44);
+}
+
+.cuenta {
+    width: 600px;
+    margin-left: 100px;
+    height: 330px;   
+    margin-top: 50px;
+    margin-left: 110px;
+}
+
+.cuenta-img img {
+    width: 400px;
+    height: 330px;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+.cuenta h2 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+}
+
+.cuenta p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left; 
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.cuenta ul li {
+    color: white;
+    list-style: none;
+    line-height: 50px;
+    font-size: 19px;
+}
+
+.cuentas {
+    margin-top: 15px;
+}
+
+table {
+    width: 90%;
+    margin-left: 65px;
+    height: 250px;
+}
+
+table th {
+    height: 80px;
+}
+
+table p {
+    margin-left: 25px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+
+td {
+    height: 50px;
+}
+
+th {
+    background-color: rgb(133, 128, 128);
+}
+
+table th,td {
+    font-size: 23px;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+section {
+    background-color: white;
+}
+
+.footer {
+    background-color: rgb(22, 20, 20);
+    padding: 55px 50px;
+    padding-left: 120px;
+    padding-bottom: 30px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.footer-links {
+    width: 25%;
+    margin-left: 50px;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #5ccbcf;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #BBBBBB;
+    display: block;
+    margin-bottom: 17px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #4acfd8;
+    padding-left: 7px;
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgb(90, 87, 87);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 30%;
+    color: #FFFFFF;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.social-link a:hover {
+    transform: scale(1.3);
+}
+
+@media (max-width: 620px) {
+
+    .img-logo {
+        margin-left: 10px;
+    }
+
+    .header {
+        max-width: 100%;
+        height: 140px;
+    }
+
+    .menu-container {
+        display: block; /* Mostrar el contenedor del botón */
+        position: sticky;
+        top: 30px;
+        margin-top: 10px; /* Espaciado superior */
+        margin-left: 0px;
+        width: 83px;
+        height: 70px;
+    }
+
+    .open-menu {
+        display: block; /* Mostrar el botón de abrir menú en pantallas pequeñas */
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .menur {
+        width: 100px;
+    }
+
+    .titler {
+        height: 0px;
+    }
+
+    .sb {
+        line-height: 20px;
+        line-height: 2rem;
+    }
+
+    .menur ul {
+        text-align: center;
+        margin-top: 0;
+        line-height: 2.5rem;
+        cursor: pointer;
+    }
+
+    .menur ul li {
+        transition: transform .3s ease;
+        color: aqua;
+    }
+
+    .menur ul li:hover {
+        transform: scale(1.2);
+        color: aqua;
+    }
+
+    .open-menu svg {
+        width: 60x;
+        height: 60px;
+    }
+
+    .close-menu svg {
+        margin-top: 10px;
+        transition: transform .3s ease;
+    }
+
+    .close-menu svg:hover {
+        transform: scale(1.2);
+    }
+
+    /* Mostrar el menú al hacer clic en el botón */
+    #menur:target {
+        display: block; /* Mostrar el menú desplegable */
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        margin-left: 30px;
+        flex-wrap: wrap;
+    }
+
+    .menu ul {
+        
+        color: black;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 2500px;
+    }
+
+    .contenido {
+        margin-left: 35px;
+        margin-top: 60px;
+    }
+
+
+    .cuenta-img img {
+        margin-left: 20px;
+    }
+
+    .cuenta-img {
+        display: flex;
+        flex-direction: column;
+        height: 770px;
+    }
+
+    .cuenta {
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+
+    .cuenta p {
+        padding-right: 190px;
+        font-size: 18px;
+    }
+
+    table {
+        margin-left: 12px;
+        width: 95%;
+    }
+
+    table p {
+        margin-left: 10px;
+        font-size: 17px;
+    }
+
+    section {
+        background-color: white;
+        padding-top: 40px;
+    }
+
+    .footer {
+        background-color: rgb(22, 20, 20);
+        margin-top: 0;
+        width: 80%;
+    }
+    
+    .footer-row {
+        display: flex;
+        margin-left: 15px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .social-link a {
+        display: inline-block;
+        min-height: 40px;
+        width: 40px;
+        background-color: rgb(110, 103, 103);
+        margin: 0 10px 10px 0;
+        line-height: 40px;
+        border-radius: 20%;
+        color: #FFFFFF;
+    }
+
+}
